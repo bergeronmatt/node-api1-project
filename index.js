@@ -2,9 +2,9 @@
 
     always start by installing dependencies
 
-    npm i
-    
     npm init -y
+
+    npm i
     
     npm i express
     
@@ -23,12 +23,17 @@ const port = 5000
 // middleware
 server.use(express.json())
 
-// database
+// dummy database
 let users = [
   {
     id: 0,
     name: "Jane Doe",
     bio: "Not Tarzan's Wife, another Jane"
+  },
+  {
+    id: 1,
+    name: "Tarzan",
+    bio: 'king of the jungle'
   }
 ]
 
